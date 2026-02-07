@@ -44,7 +44,7 @@ func apply_x_force(delta, collision_point):
 	car.apply_force(dir * x_force, collision_point - car.global_position)
 	
 	if car.debug:
-		DebugDraw3D.draw_arrow_line(global_position, global_position + (dir * x_force / 20), Color.RED, 0.1, true)
+		DebugDraw3D.draw_arrow(global_position, global_position + (dir * x_force / 20), Color.RED, 0.1, true)
 
 	
 func apply_z_force(collision_point):
@@ -58,7 +58,7 @@ func apply_z_force(collision_point):
 	var point = Vector3(collision_point.x, collision_point.y + car.wheel_radius, collision_point.z)
 	
 	if car.debug:
-		DebugDraw3D.draw_arrow_line(point, point + (-dir * z_force / 2), Color.BLUE_VIOLET, 0.1, true)
+		DebugDraw3D.draw_arrow(point, point + (-dir * z_force / 2), Color.BLUE_VIOLET, 0.1, true)
 		
 		
 func set_wheel_position(new_y_position: float):
@@ -85,7 +85,7 @@ func acceleration(collision_point):
 	car.apply_force(accel_dir * torque, point - car.global_position)
 	
 	if car.debug:
-		DebugDraw3D.draw_arrow_line(point, point + (accel_dir * torque / 20), Color.BLUE, 0.1, true)
+		DebugDraw3D.draw_arrow(point, point + (accel_dir * torque / 20), Color.BLUE, 0.1, true)
 
 
 func suspension(delta, collision_point):
@@ -114,5 +114,5 @@ func suspension(delta, collision_point):
 	
 	if car.debug:
 		#DebugDraw3D.draw_sphere(point, 0.1)
-		DebugDraw3D.draw_arrow_line(global_position, to_global(position + Vector3(-position.x, (suspension_force.y / 20), -position.z)), Color.GREEN, 0.1, true)
+		DebugDraw3D.draw_arrow(global_position, to_global(position + Vector3(-position.x, (suspension_force.y / 20), -position.z)), Color.GREEN, 0.1, true)
 		DebugDraw3D.draw_line_hit_offset(global_position, to_global(position + Vector3(-position.x, -1, -position.z)), true, distance, 0.2, Color.RED, Color.RED)
