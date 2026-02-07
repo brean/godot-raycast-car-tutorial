@@ -16,3 +16,4 @@ link : https://www.youtube.com/watch?v=H7Wd5ILZOFY
 
 ### Assets and modifications
 This fork has been modified to use the CC0-licensed "sports car 2" by Quaternius.
+<img width="1642" height="914" alt="Screenshot From 2026-02-07 22-10-03" src="https://github.com/user-attachments/assets/8cac9108-b374-4f4f-aa18-13cb88962e94" />
