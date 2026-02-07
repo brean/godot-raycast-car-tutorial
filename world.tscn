@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://dolro62xranjs" path="res://addons/kenney_prototype_textures/dark/texture_08.png" id="1_mas2x"]
 [ext_resource type="PackedScene" uid="uid://cdhc27kwynww" path="res://car.tscn" id="2_8ggpv"]
-[ext_resource type="Script" uid="uid://cnjjq1ea7xxo6" path="res://addons/godot-free-look-camera-132062011edfce9399a489756064cfea880dad4c/free_look_camera.gd" id="3_lbo7o"]
 [ext_resource type="Texture2D" uid="uid://ck6qgjh4umy0h" path="res://addons/kenney_prototype_textures/dark/texture_01.png" id="4_2r6cv"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_c1vgr"]
@@ -55,7 +54,7 @@ mesh = SubResource("PlaneMesh_0bftg")
 shape = SubResource("ConcavePolygonShape3D_gf4u3")
 
 [node name="Car" parent="." unique_id=1095311784 instance=ExtResource("2_8ggpv")]
-transform = Transform3D(0.999798, -0.0200874, 0, 0.0200874, 0.999798, 0, 0, 0, 1, -1.00918, 2.4358, 23.7742)
+transform = Transform3D(0.999798, -0.0200874, 0, 0.0200874, 0.999798, 0, 0, 0, 1, -1.00918, 0.94173336, 23.7742)
 center_of_mass_mode = 1
 center_of_mass = Vector3(0, -0.6, 0)
 suspension_rest_dist = 0.4
@@ -67,13 +66,8 @@ front_tire_grip = 0.6
 rear_tire_grip = 0.23
 
 [node name="Camera3D" type="Camera3D" parent="Car" unique_id=1705340847]
-transform = Transform3D(1, 0.000177346, -0.000750226, -1.4782e-05, 0.977411, 0.211349, 0.000770762, -0.211349, 0.97741, -0.0145969, 1.37448, 5.46462)
+transform = Transform3D(1, 0.00017734617, -0.0007502269, -1.4781952e-05, 0.977411, 0.21134904, 0.000770762, -0.21134894, 0.9774104, -0.0023154616, 1.9857632, 5.7337227)
 current = true
-
-[node name="Camera3D" type="Camera3D" parent="." unique_id=1524574812]
-transform = Transform3D(1, 0, 0, 0, 0.928369, 0.371659, 0, -0.371659, 0.928369, 0, 2.12258, 6.16536)
-current = true
-script = ExtResource("3_lbo7o")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1752971906]
 transform = Transform3D(17.6745, 0, 0, 0, 0.962161, -3.48177, 0, 0.272482, 12.2945, 0, 0.83313, -2.3731)

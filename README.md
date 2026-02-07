@@ -14,7 +14,5 @@ link: https://youtu.be/2lTGPuarYRs
 ### Part 4 (Car mesh and wheels)
 link : https://www.youtube.com/watch?v=H7Wd5ILZOFY
 
-You can download the model utilized in part 4 here
-https://sketchfab.com/3d-models/low-poly-sports-car-b81cba56aebc412c95789c2f90e9dc4c
-
-created by the artist Jorma Rysky
+### Assets and modifications
+This fork has been modified to use the CC0-licensed "sports car 2" by Quaternius.

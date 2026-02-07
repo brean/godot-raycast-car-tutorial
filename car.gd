@@ -3,7 +3,7 @@ extends RigidBody3D
 @export var suspension_rest_dist: float = 0.5
 @export var spring_strength: float = 10
 @export var spring_damper: float = 1
-@export var wheel_radius: float = 0.33
+@export var wheel_radius: float = 0.225
 
 @export var debug: bool = false
 @export var engine_power: float
