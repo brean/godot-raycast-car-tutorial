@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://bm30s51preja8" path="res://car.gd" id="1_n34nx"]
 [ext_resource type="Script" uid="uid://bfdmqpycsmyp2" path="res://wheel.gd" id="1_wfgu8"]
+[ext_resource type="PackedScene" uid="uid://dhti2wnbsbi61" path="res://addons/quaternius-car-pack/sports_car_chassis.glb" id="2_td361"]
 [ext_resource type="PackedScene" uid="uid://2vs04c3y2j8v" path="res://addons/quaternius-car-pack/sports_car_chassis_transparent.tscn" id="4_06lh1"]
 [ext_resource type="PackedScene" uid="uid://c1pb0desmqp4s" path="res://addons/quaternius-car-pack/sports_car_wheel.glb" id="4_td361"]
 
@@ -18,7 +19,11 @@ engine_power = 50.0
 front_tire_grip = 1.0
 rear_tire_grip = 0.8
 
-[node name="sports_car_chassis" parent="." unique_id=1094068155 instance=ExtResource("4_06lh1")]
+[node name="sports_car_chassis" parent="." unique_id=1776009528 instance=ExtResource("2_td361")]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, -0.3, -0.1)
+visible = false
+
+[node name="sports_car_chassis_debug" parent="." unique_id=1094068155 instance=ExtResource("4_06lh1")]
 transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, -0.3, -0.1)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=974976059]
